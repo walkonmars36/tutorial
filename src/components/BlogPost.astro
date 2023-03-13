@@ -2,4 +2,22 @@
 const {title, url} = Astro.props;
 ---
 
-<li><a href={url}>{title}</a></li>
+<li class="post-title"><a href={url}>{title}</a></li>
+
+<style>
+  li {
+    list-style-type: none;
+  }
+  a {
+    color: #00539f;
+  }
+
+  .post-title {
+    margin: 0.25em;
+    border: dotted 1px #a1a1a1;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    font-size: 1.15em;
+    background-color: #f8fcfd;
+  }
+</style>
